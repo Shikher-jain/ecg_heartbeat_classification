@@ -10,7 +10,11 @@ import io
 
 API_URL = "http://localhost:8000"  # FastAPI backend URL
 
-st.set_page_config(page_title="ECG Heartbeat Classification", layout="wide")
+st.set_page_config(
+    page_title="ECG Heartbeat Classification",
+    layout="wide",
+    page_icon="ECG_Heartbeat_Classification_Logo.jpg"
+)
 
 st.title("ECG Heartbeat Classification Dashboard")
 st.write("Upload your ECG beats and get predictions (Normal / Arrhythmia)")
