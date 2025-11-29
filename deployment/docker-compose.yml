@@ -1,0 +1,14 @@
+# deployment/docker-compose.yml
+
+version: "3.8"
+
+services:
+  ecg-api:
+    build: .
+    container_name: ecg-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
